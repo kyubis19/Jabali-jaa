@@ -1,0 +1,106 @@
+    /*Index*/
+    
+    body {
+        background-color: #670f22;
+    }
+    
+    .bg-col {
+        background-color: #670f22;
+    }
+    
+    .footer {
+        background-color: #E3DCB6;
+    }
+    /*Nosotros*/
+    
+     :root {
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    
+    .body2 {
+        background: #f2f2f2;
+        height: 100vh;
+    }
+    
+    .text {
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .name {
+        font-size: 3rem;
+    }
+    
+    .paragraph {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    
+    .item {
+        position: relative;
+        padding-left: 1rem;
+    }
+    
+    .item::before {
+        content: "";
+        display: block;
+        background: slateblue;
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        clip-path: var(--clippy);
+        transition: clip-path 2s;
+    }
+    
+    .paragraph::before {
+        background: #f86d70;
+    }
+    
+    .item:hover::before {
+        clip-path: polygon(0 0, 85% 0, 99% 100%, 0 100%);
+    }
+    
+    .im1 {
+        height: 40%;
+        width: 40%;
+    }
+    
+    .im2 {
+        height: 40%;
+        width: 60%;
+    }
+    /*Contacto*/
+    
+    .sec {
+        background-color: aliceblue;
+    }
+    
+    .form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #6a041a;
+    }
+    
+    .eti {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+    }
+    
+    input,
+    textarea {
+        font: 1em sans -serif;
+        width: 300px;
+        box-sizing: content-box;
+        border: 1px solid #6a041a
+    }
+    
+    textarea {
+        height: 5em;
+    }
