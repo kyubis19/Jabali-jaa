@@ -1,0 +1,4 @@
+@use'mixins' as m;
+.titc {
+    @include m.titulo;
+}
