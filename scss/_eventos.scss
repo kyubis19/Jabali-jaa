@@ -2,3 +2,11 @@
 .tit {
     @include m.titulo;
 }
+
+.eventos {
+    text-align: center;
+    padding: 20px 0;
+    p {
+        text-align: center;
+    }
+}
